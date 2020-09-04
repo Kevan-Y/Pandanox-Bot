@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 from youtube_search import YoutubeSearch
 

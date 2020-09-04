@@ -1,6 +1,4 @@
-import discord
 import Game.hangmanUtilities as hm
-
 from discord.ext import commands
 
 
