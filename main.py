@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix="!")
 bot.remove_command("help")
 
 intial_extensions = ['cogs.basic', 'cogs.profile',
-                     'cogs.hangman', 'cogs.youtube', 'cogs.weather', 'cogs.music']
+                     'cogs.hangman', 'cogs.youtube', 'cogs.weather', 'cogs.music', 'cogs.moderation']
 
 
 @bot.event

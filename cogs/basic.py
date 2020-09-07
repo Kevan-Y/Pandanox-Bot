@@ -8,7 +8,7 @@ class Basic(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=['PING'])
+    @commands.command()
     async def ping(self, ctx):
         embed = discord.Embed(
             title='Pong',
@@ -40,8 +40,8 @@ class Basic(commands.Cog):
             name="!weather", value='`!weather <city>` Return forecast of the city mentioned.', inline=False)
         await ctx.send(embed=embed)
 
-    @commands.command(aliases=['random'])
-    async def _random(self, ctx, *, num):
+    @commands.command()
+    async def random(self, ctx, *, num):
         descs = ""
         if re.match("^\d+$", num):
             descs = f'Your magic number is {str(random.randint(int(0), int(num)))}'
